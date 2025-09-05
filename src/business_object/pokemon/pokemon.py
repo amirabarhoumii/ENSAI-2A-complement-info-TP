@@ -52,7 +52,7 @@ class Pokemon:
         """
         Increase the level by one
         """
-        self._level += 1
+        self._level = self._level + 1
 
     def reset_actual_stat(self) -> None:
         self._stat_current = copy.deepcopy(self._stat_max)
